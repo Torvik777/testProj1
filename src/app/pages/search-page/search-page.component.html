@@ -1,0 +1,10 @@
+@if(profiles.length > 0){
+    <div class="profile-card__wrapper">
+        @for(profile of profiles; track profile.id){
+            <app-progile-card [profile]="profile"></app-progile-card>
+        }
+    </div>
+    
+}@else {
+    <h1>Дані не прийшли з сервера</h1> 
+}

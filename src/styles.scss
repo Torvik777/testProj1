@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@use '../src/app/fonts' as *;
+
+:root{
+    --dark-color: #000000;
+    --light-color: #ffffff;
+    --accent-color: #AE7AFF;
+}
+
+body{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: 'JetBrains Mono';
+}
+
+.btn {
+    border: none;
+    background: var(--accent-color);
+    color: var(--dark-color);
+    font-family: 'JetBrains Mono';
+}
+
+.h6{
+    font-size: 24px;
+    font-weight: 800;
+}
