@@ -11,6 +11,10 @@ body{
     background-color: var(--dark-color);
     color: var(--light-color);
     font-family: 'JetBrains Mono';
+    background-image: url(/assets/images/Img-Bg.png);
+    background-repeat: no-repeat;
+    background-position: top-right;
+    background-size: cover;
 }
 
 .btn {
@@ -20,6 +24,10 @@ body{
     font-family: 'JetBrains Mono';
 }
 
+h1{
+    font-size: 48px;
+    font-weight: 800;
+}
 .h6{
     font-size: 24px;
     font-weight: 800;

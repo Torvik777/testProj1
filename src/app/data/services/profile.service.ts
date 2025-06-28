@@ -9,12 +9,12 @@ import { Profile } from '../interfaces/profile.interface';
 export class ProfileService {
 
   private readonly http = inject(HttpClient)
-  private readonly baseAspiUrl = 'https://icherniakov.ru';
+  private readonly baseApiUrl = 'https://icherniakov.ru/yt-course';
 
   constructor() {
   }
   
   getTestAcounts():Observable<Profile[]> {
-   return this.http.get<Profile[]>(this.baseAspiUrl + '/yt-course/account/test_accounts') 
+   return this.http.get<Profile[]>(this.baseApiUrl + '/account/test_accounts') 
   }
 }
